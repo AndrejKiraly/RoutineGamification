@@ -1,0 +1,249 @@
+{
+  "id": "evening-routine",
+  "name": "Večerná rutina",
+  "description": "Večerná rutina na relaxáciu a prípravu na spánok",
+  "type": "daily",
+  "icon": "🌙",
+  "startTime": "21:00",
+  "totalDuration": 90,
+  "skillRewards": {
+    "physical": 38,
+    "discipline": 30,
+    "mental": 22
+  },
+  "sections": [
+    {
+      "id": "evening-dog-walk",
+      "name": "Večerné venčenie",
+      "timeRange": "21:00-21:15",
+      "duration": 15,
+      "items": [
+        {
+          "id": "walk-dog-evening",
+          "description": "Večerná prechádzka so psom (15 min)",
+          "duration": 15,
+          "skillRewards": {
+            "physical": 6,
+            "mental": 4
+          },
+          "notes": "Posledná prechádzka, kľudná atmosféra"
+        }
+      ]
+    },
+    {
+      "id": "evening-prep",
+      "name": "Príprava na zajtra",
+      "timeRange": "21:15-21:25",
+      "duration": 10,
+      "items": [
+        {
+          "id": "prep-clothes",
+          "description": "Pripraviť si oblečenie na zajtra na stoličku",
+          "duration": 3,
+          "skillRewards": {
+            "discipline": 3
+          }
+        },
+        {
+          "id": "prep-dog-stuff",
+          "description": "Pripraviť psie veci (vodítko, sáčky)",
+          "duration": 2,
+          "skillRewards": {
+            "discipline": 2
+          }
+        },
+        {
+          "id": "prep-water",
+          "description": "Naplniť fľašu s vodou vedľa postele",
+          "duration": 1,
+          "skillRewards": {
+            "discipline": 1
+          }
+        },
+        {
+          "id": "prep-phone",
+          "description": "Dať telefón nabíjať MIMO dosahu postele",
+          "duration": 1,
+          "skillRewards": {
+            "discipline": 2
+          }
+        },
+        {
+          "id": "check-tomorrow",
+          "description": "Skontrolovať zajtra v kalendári (meetings, deadlines)",
+          "duration": 3,
+          "skillRewards": {
+            "discipline": 2,
+            "mental": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "stretching-routine",
+      "name": "Stretching session",
+      "timeRange": "21:25-21:55",
+      "duration": 30,
+      "items": [
+        {
+          "id": "hip-flexor-stretch",
+          "description": "Hip Flexor Stretch - 3 min každá strana (kľačiaci výpad)",
+          "duration": 6,
+          "skillRewards": {
+            "physical": 6
+          },
+          "notes": "#1 priorita pre sedavý životný štýl"
+        },
+        {
+          "id": "pigeon-pose",
+          "description": "Pigeon Pose (alebo Figure-4) - 3 min každá strana",
+          "duration": 6,
+          "skillRewards": {
+            "physical": 5,
+            "mental": 2
+          }
+        },
+        {
+          "id": "hamstring-stretch",
+          "description": "Hamstring Stretch - 3 min každá noha",
+          "duration": 6,
+          "skillRewards": {
+            "physical": 5
+          }
+        },
+        {
+          "id": "adductor-stretch",
+          "description": "Adductor Stretch (vnútorné stehná) - 3 min",
+          "duration": 3,
+          "skillRewards": {
+            "physical": 3
+          }
+        },
+        {
+          "id": "deep-squat",
+          "description": "Deep Squat Hold (azijský drep) - 2 min",
+          "duration": 2,
+          "skillRewards": {
+            "physical": 3,
+            "mental": 1
+          }
+        },
+        {
+          "id": "chest-stretch",
+          "description": "Doorway Chest Stretch - 2 min",
+          "duration": 2,
+          "skillRewards": {
+            "physical": 2
+          }
+        },
+        {
+          "id": "spinal-twist",
+          "description": "Spinal Twist (ležiac) - 2 min každá strana",
+          "duration": 4,
+          "skillRewards": {
+            "physical": 3,
+            "mental": 2
+          }
+        },
+        {
+          "id": "childs-pose",
+          "description": "Child's Pose - 1 min (finálna relaxácia)",
+          "duration": 1,
+          "skillRewards": {
+            "physical": 1,
+            "mental": 2
+          }
+        }
+      ],
+      "notes": "Môžeš pri tom pozerať video/počúvať hudbu. Každý stretch drž pomaly, dýchaj hlboko."
+    },
+    {
+      "id": "hygiene",
+      "name": "Večerná hygiena",
+      "timeRange": "21:55-22:10",
+      "duration": 15,
+      "items": [
+        {
+          "id": "shower",
+          "description": "Sprcha (teplá, relaxačná)",
+          "duration": 8,
+          "skillRewards": {
+            "mental": 5,
+            "discipline": 2
+          },
+          "notes": "Večer БЕЗ studenej vody - chceš sa upokojiť, nie aktivovať"
+        },
+        {
+          "id": "wash-face",
+          "description": "Umyť tvár",
+          "duration": 2,
+          "skillRewards": {
+            "discipline": 1
+          }
+        },
+        {
+          "id": "brush-teeth",
+          "description": "Umyť zuby (dôkladne)",
+          "duration": 5,
+          "skillRewards": {
+            "discipline": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "wind-down",
+      "name": "Wind-down",
+      "timeRange": "22:10-22:30",
+      "duration": 20,
+      "items": [
+        {
+          "id": "dim-lights",
+          "description": "Stlmiť svetlá v byte/použiť len nočnú lampu",
+          "duration": 1,
+          "skillRewards": {
+            "mental": 1
+          },
+          "notes": "Pomáha melatonínu"
+        },
+        {
+          "id": "night-mode",
+          "description": "Zapnúť night mode na všetkých zariadeniach",
+          "duration": 1,
+          "skillRewards": {
+            "discipline": 1
+          }
+        },
+        {
+          "id": "relax-activity",
+          "description": "Relaxačná aktivita (čítanie, meditácia, journaling, alebo kľudné video)",
+          "duration": 15,
+          "skillRewards": {
+            "mental": 8,
+            "logic": 5
+          },
+          "notes": "ŽIADNE sociálne médiá, žiadne akčné filmy, žiadny scrolling"
+        },
+        {
+          "id": "gratitude",
+          "description": "3 veci za ktoré si dnes vďačný (v hlave alebo na papier)",
+          "duration": 2,
+          "skillRewards": {
+            "mental": 3,
+            "discipline": 2
+          },
+          "notes": "Pozitívny mindset pred spánkom = lepšia nálada zajtra"
+        },
+        {
+          "id": "bed-time",
+          "description": "Do postele - spánok!",
+          "duration": 1,
+          "skillRewards": {
+            "discipline": 3
+          },
+          "notes": "Cieľ: zaspať do 22:30-22:45"
+        }
+      ]
+    }
+  ]
+}

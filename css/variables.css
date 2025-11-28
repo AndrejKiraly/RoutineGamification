@@ -1,0 +1,86 @@
+/**
+ * CSS Custom Properties - Design System
+ * Solo Leveling inspired color scheme
+ */
+
+:root {
+  /* Colors - Dark Mode (default) */
+  --color-bg-primary: #0a0e27;
+  --color-bg-secondary: #1a1f3a;
+  --color-bg-tertiary: #252b47;
+  --color-text-primary: #e0e6ed;
+  --color-text-secondary: #9ca3af;
+  --color-text-muted: #6b7280;
+  --color-accent: #00d4ff;
+  --color-accent-dark: #0099cc;
+  --color-success: #00ff88;
+  --color-warning: #ffd700;
+  --color-danger: #ff4444;
+  --color-info: #00d4ff;
+
+  /* XP Gradients */
+  --gradient-xp: linear-gradient(90deg, #00d4ff, #7b2ff7);
+  --gradient-physical: linear-gradient(90deg, #ff6b6b, #ff8e53);
+  --gradient-mental: linear-gradient(90deg, #4ecdc4, #44a9ff);
+  --gradient-discipline: linear-gradient(90deg, #ffe66d, #ffa940);
+  --gradient-productivity: linear-gradient(90deg, #a8e6cf, #81c784);
+  --gradient-logic: linear-gradient(90deg, #a78bfa, #c084fc);
+  --gradient-coding: linear-gradient(90deg, #60a5fa, #3b82f6);
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-xxl: 3rem;
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.25);
+  --shadow-glow: 0 0 20px rgba(0, 212, 255, 0.3);
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Typography */
+  --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-heading: 'Rajdhani', 'Orbitron', sans-serif;
+
+  /* Z-index */
+  --z-dropdown: 1000;
+  --z-modal: 1050;
+  --z-overlay: 9999;
+}
+
+/* Light Mode */
+[data-theme="light"] {
+  --color-bg-primary: #f5f7fa;
+  --color-bg-secondary: #ffffff;
+  --color-bg-tertiary: #e5e7eb;
+  --color-text-primary: #1f2937;
+  --color-text-secondary: #4b5563;
+  --color-text-muted: #9ca3af;
+  --color-accent: #0066cc;
+  --color-accent-dark: #004d99;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #0066cc;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+  --shadow-glow: 0 0 20px rgba(0, 102, 204, 0.2);
+}

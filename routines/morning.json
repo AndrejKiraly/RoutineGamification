@@ -1,0 +1,202 @@
+{
+  "id": "morning-routine",
+  "name": "Ranná rutina",
+  "description": "Finálna ranná rutina na naštartovanie dňa",
+  "type": "daily",
+  "icon": "☀️",
+  "startTime": "06:00",
+  "totalDuration": 50,
+  "skillRewards": {
+    "physical": 45,
+    "discipline": 32,
+    "mental": 13,
+    "productivity": 7
+  },
+  "sections": [
+    {
+      "id": "activation",
+      "name": "Aktivácia",
+      "timeRange": "0-2 min",
+      "duration": 2,
+      "items": [
+        {
+          "id": "drink-water",
+          "description": "Vypiť vodu z fľaše vedľa postele",
+          "duration": 0.5,
+          "skillRewards": {
+            "discipline": 1
+          }
+        },
+        {
+          "id": "get-up",
+          "description": "Vstať (telefón ďaleko), otvoriť okno/žalúzie",
+          "duration": 1,
+          "skillRewards": {
+            "discipline": 2
+          },
+          "notes": "Žiadne sociálne médiá!"
+        }
+      ]
+    },
+    {
+      "id": "dynamic-stretch",
+      "name": "Rýchly dynamický stretch",
+      "timeRange": "2-7 min",
+      "duration": 5,
+      "items": [
+        {
+          "id": "leg-swings",
+          "description": "Leg swings (dopredu-dozadu, do strán) - 10x každá noha",
+          "duration": 1,
+          "skillRewards": {
+            "physical": 2
+          }
+        },
+        {
+          "id": "hip-circles",
+          "description": "Hip circles - 10x každým smerom",
+          "duration": 1,
+          "skillRewards": {
+            "physical": 2
+          }
+        },
+        {
+          "id": "cat-cow",
+          "description": "Cat-Cow - 10x",
+          "duration": 1,
+          "skillRewards": {
+            "physical": 2,
+            "mental": 1
+          }
+        },
+        {
+          "id": "worlds-greatest",
+          "description": "World's greatest stretch - 3x každá strana",
+          "duration": 1.5,
+          "skillRewards": {
+            "physical": 3
+          }
+        },
+        {
+          "id": "arm-circles",
+          "description": "Arm circles - 10x každým smerom",
+          "duration": 0.5,
+          "skillRewards": {
+            "physical": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "activation-exercise",
+      "name": "Aktivačné cvičenie",
+      "timeRange": "7-15 min",
+      "duration": 8,
+      "items": [
+        {
+          "id": "jumping-jacks",
+          "description": "Jumping jacks - 30x",
+          "duration": 1,
+          "skillRewards": {
+            "physical": 3
+          }
+        },
+        {
+          "id": "burpees",
+          "description": "Burpees - 10x",
+          "duration": 1.5,
+          "skillRewards": {
+            "physical": 5,
+            "discipline": 3
+          }
+        },
+        {
+          "id": "squats",
+          "description": "Bodyweight squats - 20x",
+          "duration": 1,
+          "skillRewards": {
+            "physical": 3
+          }
+        },
+        {
+          "id": "mountain-climbers",
+          "description": "Mountain climbers - 30 sekúnd",
+          "duration": 0.5,
+          "skillRewards": {
+            "physical": 2
+          }
+        },
+        {
+          "id": "high-knees",
+          "description": "High knees - 30 sekúnd",
+          "duration": 0.5,
+          "skillRewards": {
+            "physical": 2
+          }
+        }
+      ],
+      "notes": "Opakuj 2-3 kolá podľa času/energie"
+    },
+    {
+      "id": "shower",
+      "name": "Sprcha",
+      "timeRange": "15-18 min",
+      "duration": 3,
+      "items": [
+        {
+          "id": "shower-routine",
+          "description": "Teplá, potom 30 sek studená na konci",
+          "duration": 3,
+          "skillRewards": {
+            "discipline": 3,
+            "physical": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "dog-walk",
+      "name": "Von so psom",
+      "timeRange": "18-35 min",
+      "duration": 17,
+      "items": [
+        {
+          "id": "walk-outside",
+          "description": "15-20 min vonku (svetlo + čerstvý vzduch)",
+          "duration": 17,
+          "skillRewards": {
+            "physical": 8,
+            "mental": 5
+          },
+          "notes": "Podcast/hudba čo ťa nabíja"
+        }
+      ]
+    },
+    {
+      "id": "breakfast",
+      "name": "Raňajky + transition",
+      "timeRange": "35-50 min",
+      "duration": 15,
+      "items": [
+        {
+          "id": "eat-breakfast",
+          "description": "Jednoduché raňajky",
+          "duration": 10,
+          "skillRewards": {
+            "discipline": 2
+          }
+        },
+        {
+          "id": "warmup-coding",
+          "description": "10 min warm-up kódovanie (niečo fun)",
+          "duration": 5,
+          "skillRewards": {
+            "coding": 5,
+            "logic": 2,
+            "productivity": 2
+          }
+        }
+      ]
+    }
+  ]
+}

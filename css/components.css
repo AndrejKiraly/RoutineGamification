@@ -1,0 +1,251 @@
+/**
+ * Custom Components
+ * Skill bars, timelines, routine items
+ */
+
+/* Profile Card */
+.profile-card {
+  position: sticky;
+  top: 80px;
+}
+
+.profile-card .avatar {
+  width: 60px;
+  height: 60px;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-xp);
+  border-radius: 50%;
+  box-shadow: var(--shadow-glow);
+}
+
+/* Skill Bars */
+.skill-bar {
+  margin-bottom: var(--space-md);
+}
+
+.skill-bar .progress {
+  height: 1.2rem;
+  margin: var(--space-xs) 0;
+  position: relative;
+  overflow: visible;
+}
+
+.skill-bar .progress-bar {
+  position: relative;
+  overflow: visible;
+}
+
+.skill-bar.physical .progress-bar {
+  background: var(--gradient-physical);
+}
+
+.skill-bar.mental .progress-bar {
+  background: var(--gradient-mental);
+}
+
+.skill-bar.discipline .progress-bar {
+  background: var(--gradient-discipline);
+}
+
+.skill-bar.productivity .progress-bar {
+  background: var(--gradient-productivity);
+}
+
+.skill-bar.logic .progress-bar {
+  background: var(--gradient-logic);
+}
+
+.skill-bar.coding .progress-bar {
+  background: var(--gradient-coding);
+}
+
+.skill-bar small {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+/* Prestige Stars */
+.prestige-stars {
+  color: var(--color-warning);
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+/* Streak Badge */
+.streak-info .badge {
+  font-size: 1rem;
+  padding: var(--space-sm) var(--space-md);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Timeline */
+.timeline-header {
+  margin-bottom: var(--space-lg);
+}
+
+.timeline-bar {
+  position: relative;
+  padding: var(--space-md) 0;
+  margin: var(--space-md) 0;
+}
+
+.timeline-line {
+  height: 3px;
+  background: var(--gradient-xp);
+  border-radius: var(--radius-sm);
+  position: relative;
+  margin: var(--space-sm) 0;
+}
+
+.timeline-line::before,
+.timeline-line::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: var(--shadow-glow);
+}
+
+.timeline-line::before {
+  left: 0;
+}
+
+.timeline-line::after {
+  right: 0;
+}
+
+/* Section Cards */
+.section-card .card-header {
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: var(--space-md);
+  user-select: none;
+}
+
+.section-card .card-body {
+  padding: var(--space-md);
+}
+
+.section-card .status-badge {
+  font-size: 1.2rem;
+  margin-right: var(--space-sm);
+}
+
+/* Routine Items */
+.routine-item {
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--color-bg-tertiary);
+  transition: background-color var(--transition-fast);
+}
+
+.routine-item:last-child {
+  border-bottom: none;
+}
+
+.routine-item:hover {
+  background-color: rgba(0, 212, 255, 0.05);
+}
+
+.routine-item.completed {
+  opacity: 0.7;
+}
+
+.routine-item .form-check-input {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0;
+  cursor: pointer;
+  border: 2px solid var(--color-accent);
+  background-color: transparent;
+}
+
+.routine-item .form-check-input:checked {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-glow);
+}
+
+.routine-item .form-check-label {
+  cursor: pointer;
+  margin-left: var(--space-sm);
+  flex: 1;
+}
+
+.routine-item .rewards {
+  margin-top: var(--space-sm);
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.routine-item .notes {
+  margin-top: var(--space-xs);
+  font-style: italic;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+/* Routine Progress */
+.routine-footer {
+  margin-top: var(--space-xl);
+  text-align: center;
+}
+
+.routine-footer .progress {
+  height: 2rem;
+  margin: var(--space-md) 0;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.stat-card {
+  text-align: center;
+  padding: var(--space-lg);
+}
+
+.stat-card .stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+}
+
+.stat-card .stat-label {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-card {
+    position: static;
+  }
+
+  .timeline-bar span {
+    font-size: 0.875rem;
+  }
+
+  .section-card .card-header {
+    font-size: 1rem;
+    padding: var(--space-sm);
+  }
+
+  .routine-item {
+    padding: var(--space-sm);
+  }
+}
