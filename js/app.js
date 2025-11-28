@@ -11,6 +11,7 @@ import { AchievementManager } from './managers/AchievementManager.js';
 import { UIRenderer } from './ui/UIRenderer.js';
 import { ModalManager } from './ui/ModalManager.js';
 import { AnimationManager } from './ui/AnimationManager.js';
+import { firebaseConfig } from './config/firebase-config.js';
 
 class App {
   constructor() {
@@ -37,6 +38,9 @@ class App {
       // Initialize theme
       this.themeManager.init();
 
+      // Initialize Firebase (optional - will fallback to LocalStorage if not configured)
+      await this.initializeFirebase();
+
       // Load user data
       await this.loadUser();
 
@@ -56,6 +60,18 @@ class App {
     } catch (error) {
       console.error('Failed to initialize app:', error);
       this.showError('Failed to initialize application. Please refresh the page.');
+    }
+  }
+
+  /**
+   * Initialize Firebase (optional)
+   */
+  async initializeFirebase() {
+    try {
+      await this.storageManager.initializeFirebase(firebaseConfig);
+    } catch (error) {
+      // Firebase initialization is optional, app works with LocalStorage
+      console.log('Using LocalStorage (Firebase not available)');
     }
   }
 
